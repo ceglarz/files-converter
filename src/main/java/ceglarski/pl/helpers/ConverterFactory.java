@@ -7,7 +7,7 @@ public class ConverterFactory {
     {
         try {
             String fileExtension = getFileExtension(file);
-            if (fileExtension.equalsIgnoreCase("txt")) {
+            if (fileExtension.equalsIgnoreCase("txt") || fileExtension.equalsIgnoreCase("csv")) {
                 return new ConverterTXT();
             } else if (fileExtension.equalsIgnoreCase("xml")) {
                 return new ConverterXML();
